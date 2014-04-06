@@ -24,6 +24,16 @@
 			console.log(event, 'Click!');
 		}, false);
 
+		// Test Canvas Coordinates with the mouse...
+
+		var canvas, mousePosition;
+		canvas = document.getElementById('primary-backbone-canvas');
+		mousePosition = utils.captureMouse(canvas);
+		console.log(mousePosition);
+		canvas.addEventListener('mousedown', function() {
+			console.log('x: ' + mousePosition.x + ', y: ' + mousePosition.y);
+		}, false);
+
 	};
 
 }(jQuery));

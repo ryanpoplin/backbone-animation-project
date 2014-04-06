@@ -3,7 +3,7 @@
 var utils;
 utils = {};
 
-(function($) {
+utils.crossBrowserAnimation = (function($) {
 
 if (!window.requestAnimationFrame) {
 	window.requestAnimationFrame = (window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
@@ -14,3 +14,27 @@ if (!window.requestAnimationFrame) {
 }
 
 }(jQuery));
+
+utils.captureMouse = function(element) {
+	
+	var mouse;
+	mouse = { x: 0, y: 0 };
+
+	element.addEventListener('mousemove', function(event) {
+		var x, y;
+		if (event.pageX || event.pageY) {
+			x = event.pageX;
+			y = event.pageY;
+		} else {
+			x = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+			y = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+		}
+		x -= element.offsetLeft;
+		y -= element.offsetTop;
+		mouse.x = x;
+		mouse.y = y;
+	}, false);
+
+	return mouse;
+
+}
