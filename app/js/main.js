@@ -1,10 +1,6 @@
-// Nothing fancey yet...
+'use strict';
 
 (function($) {
-
-	'use strict';
-
-	// Check for the 'Canvas' element....
 
 	if (document.createElement('canvas').getContext) {
 		console.log('You\'re HTML5 Enabled!');
@@ -13,8 +9,6 @@
 	}
 
 	var BackboneCanvasView, BackboneCanvasRouter;
-
-	// Backbone Canvas Router...
 
 	BackboneCanvasRouter = Backbone.Router.extend({
 		routes: {
@@ -29,8 +23,6 @@
 			console.log('BackboneCanvasRouter init...');
 		}
 	});
-
-	// Backbone Canvas View...
 
 	BackboneCanvasView = Backbone.View.extend({
 		el: 'div#main',
