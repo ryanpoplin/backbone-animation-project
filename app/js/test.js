@@ -4,14 +4,14 @@
 
 	$(function() {
 
-		console.log('...1');
+		/*(function drawFrame() {
+			window.requestAnimationFrame(drawFrame, canvas);
+		}());*/
 
 	});
 
-	window.onload = function() {
+	/*window.onload = function() {
 
-		console.log('...2');
-
-	};
+	};*/
 
 }(jQuery));

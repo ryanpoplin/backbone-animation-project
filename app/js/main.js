@@ -1,5 +1,3 @@
-// Config CommonJS Modules...
-
 'use strict';
 
 (function($) {
