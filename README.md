@@ -12,4 +12,6 @@ How do I use this?
 
 - Go to 'localhost:8080/app'
 
+- If port '8080' is taken up, or you want to use a certain port; type: http-server -p 8181 (or what ever you want...).
+
 - Done...
