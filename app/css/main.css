@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #f8f8f8;
 }
 ol, ul {
 	list-style: none;
@@ -49,8 +50,16 @@ table {
 
 /* Application Styles... */
 
+/* Will make it responsive soon... */
+
+div#main {
+	background-color: #f8f8f8;
+}
+
 canvas#primary-backbone-canvas {
-	border: 1px solid #a0a0a0;
+	background-color: #fefefe;
+	border: 1px solid #f0f0f0;
+	box-shadow: 3px 3px 1px #f0f0f0;
 	margin: 30px auto;
 	height: 300px;
 	width: 960px;
