@@ -46,3 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Application Styles... */
+
+canvas#primary-backbone-canvas {
+	border: 1px solid #a0a0a0;
+	margin: 30px auto;
+	height: 300px;
+	width: 960px;
+	display: block;
+}
