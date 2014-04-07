@@ -1,5 +1,3 @@
-// Will be global until I add support for CommonJS Modules...
-
 var utils;
 utils = {};
 
@@ -38,3 +36,36 @@ utils.captureMouse = function(element) {
 	return mouse;
 
 }
+
+utils.captureTouch = function(element) {
+
+	var touch;
+	touch = { x: null, y: null, isPressed: false };
+	element.addEventListener('touchstart', function(event) {
+		touch.isPressed = true;
+	}, false);
+	element.addEventListener('touchend', function(event) {
+		touch.isPressed = false;
+		touch.x = null;
+		touch.y = null;
+	}, false);
+	element.addEventListener('touchmove', function(event) {
+		var x, y, touchEvent = event.touches[0];
+		if (touchEvent.pageX || touchEvent.pageY) {
+			x = touchEvent.pageX;
+			y = touchEvent.pageY;
+		} else {
+			x = touchEvent.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+			y = touchEvent.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+		}
+		// ?...
+		console.log(offsetLeft, offsetTop);
+		x -= offsetLeft;
+		y -= offsetTop;
+		touch.x = x;
+		touch.y = y;
+	}, false);
+
+	return touch;
+
+};

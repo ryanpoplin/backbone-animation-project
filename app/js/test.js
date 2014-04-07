@@ -34,6 +34,35 @@
 			console.log('x: ' + mousePosition.x + ', y: ' + mousePosition.y);
 		}, false);
 
+		// Test Touch Events...
+
+		var touchPosition;
+		touchPosition = utils.captureTouch(canvas);
+		if (touchPosition.isPressed) {
+			console.log('x: ' + touchPosition.x + ', y: ' + touchPosition.y);
+		}
+
+		function onKeyboardEvent(event) {
+			switch (event.keyCode) {
+				case keycode.UP:
+					console.log('UP');
+					break;
+				case keycode.DOWN:
+					console.log('DOWN');
+					break;
+				case keycode.LEFT:
+					console.log('LEFT');
+					break;
+				case keycode.RIGHT: 
+					console.log('RIGHT');
+					break;
+				default:
+					console.log(event.keyCode);
+		}
+	}	
+
+	window.addEventListener('keydown', onKeyboardEvent, false);
+
 	};
 
 }(jQuery));
