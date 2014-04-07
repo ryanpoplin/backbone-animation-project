@@ -14,4 +14,6 @@ How do I use this?
 
 - If port '8080' is taken up, or you want to use a certain port; type: http-server -p 8181 (or what ever you want...).
 
+- (Dummy Tests for now...), but to run them; go to 'localhost:8080/app/specs/test.html'...
+
 - Done...
