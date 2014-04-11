@@ -2,9 +2,6 @@ Will be working on a paid project for a few weeks and will not have the time to 
 
 It picks up your every move!
 
-4f:64:8c:f0:7d:60:70:d7:8b:dd:3a:f1:1d:95:c3:50
-
-
 How do I use this?
 
 - Globally install Node's 'http-server' module via npm.  
