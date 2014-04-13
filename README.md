@@ -1,6 +1,4 @@
-Will be working on a paid project for a few weeks and will not have the time to work on this. However, It's at a great starting point and I'll get back to it as soon as possible. If you want to see why this is already badass as is; clone or fork this repo and open your web browser console; once you've served it. Start typing and clicking on the canvas element...
-
-It picks up your every move!
+This project is inspired by work from Billy Lamberta and Keith Peters...
 
 How do I use this?
 
