@@ -59,17 +59,6 @@ table {
     font-family: 'Open Sans', sans-serif;
 }
 
-div.test-style {
-	width: 85%;
-	height: 20px;
-	background-color: #131313;
-	margin: 20px auto;
-}
-
-div#main {
-	background-color: #f8f8f8;
-}
-
 canvas#primary-backbone-canvas {
 	width: 85%;
 	background-color: #fefefe;
