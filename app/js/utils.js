@@ -1,6 +1,14 @@
 var utils;
 utils = {};
 
+utils.radians = function(d) {
+	return d * Math.PI / 180;
+};
+
+utils.degrees = function(r) {
+	return r * 180 / Math.PI;
+};
+
 utils.crossBrowserAnimation = (function($) {
 
 if (!window.requestAnimationFrame) {
